@@ -90,6 +90,7 @@ while op!= 1:
         print()
         print('QUITO / GUAYAQUIL / LOJA')
         print()
+        print('_____________________________________________________________________________________')
         
 
           
@@ -121,6 +122,7 @@ while op!= 1:
         print()
         print('REGIONES: COSTA / SIERRA / ORIENTE')
         print()
+        print('_____________________________________________________________________________________')
         
         informacion = {
         'costa': ('Guayaquil', 'Manta'),
