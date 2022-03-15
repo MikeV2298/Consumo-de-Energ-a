@@ -1,5 +1,5 @@
 
-print('_____________________________________________________________________________________')
+print('_____________________________________________________________')
 def saludo(nombre):
     print()
     print('Hola {}'.format(nombre),', bienvenido.')
@@ -22,12 +22,12 @@ op = 0
 def menu():
     print()
     print()
-    print("ESCOJA UNA OPCIÓN PARA CONSULTAR :")
+    print("ESCOJA UNA OPCIÓN DISPONIBLE:")
     print('<1> Total de MWH por dicha Planta y Ciudad.')
     print('<2> Total de MWH por cada Planta')
-    print('<3> Total de DINERO RECAUDADO POR CADA REGION')
+    print('<3> Total de dinero recaudado por cada región')
     print('<4> SALIR')
-    print('_____________________________________________________________________________________')
+    print('_____________________________________________________________')
 
 while op!= 1:
     menu()
@@ -44,7 +44,7 @@ while op!= 1:
           
           p = str(input('Ingrese el nombre de la Planta (En mayúscula escriba): '))
           c = str(input('Ingrese el nombre de la Ciudad (En mayúscula escriba): '))
-          print('_____________________________________________________________________________________')
+          print('_____________________________________________________________')
           if p == 'COCA CODO SINCLAIR' and c =='QUITO':
             #COCA QUITO
             tarifa_coca_quito = consumo_energia['Coca Codo Sinclair']['Quito']['tarifa']
@@ -90,7 +90,7 @@ while op!= 1:
         print()
         print('QUITO / GUAYAQUIL / LOJA')
         print()
-        print('_____________________________________________________________________________________')
+        print('_____________________________________________________________')
         
 
           
@@ -99,7 +99,7 @@ while op!= 1:
         'Guayaquil': ('Coca Codo Sinclair', 'Sopladora'),
         'Loja': ('Sopladora')
         }
-        c = str(input('Ingrese el nombre de la Ciudad(En mayúsculas): '))
+        c = str(input('Ingrese el nombre de la ciudad(mayus): '))
         if c == 'QUITO':
             print('Las plantas que producen energia en esta ciudad son', plantas['Quito'])
             print('COCA CODO SINCLAIR:', sum(consumo_energia['Coca Codo Sinclair']['Quito']['consumos']),'MWh')
@@ -122,14 +122,14 @@ while op!= 1:
         print()
         print('REGIONES: COSTA / SIERRA / ORIENTE')
         print()
-        print('_____________________________________________________________________________________')
-        
+        print('_____________________________________________________________')
+
         informacion = {
         'costa': ('Guayaquil', 'Manta'),
         'sierra': ('Quito', 'Ambato', 'Loja'),
         'oriente': ('Tena', 'Nueva Loja')
         }
-        r = str(input('Ingrese el nombre de una Region(En mayúsculas): '))
+        r = str(input('Ingrese el nombre de una region(mayus): '))
         if r == 'SIERRA':
               qui_consu_a = sum(consumo_energia['Coca Codo Sinclair']['Quito']['consumos'])
               qui_consu_b = sum(consumo_energia['Sopladora']['Quito']['consumos'])
