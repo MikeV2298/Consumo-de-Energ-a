@@ -22,7 +22,7 @@ op = 0
 def menu():
     print()
     print()
-    print("ESCOJA UNA OPCIÓN :")
+    print("ESCOJA UNA OPCIÓN PARA CONSULTAR :")
     print('<1> Total de MWH por dicha Planta y Ciudad.')
     print('<2> Total de MWH por cada Planta')
     print('<3> Total de DINERO RECAUDADO POR CADA REGION')
